@@ -11,7 +11,7 @@ dctoken = None
 
 start = time.time()
 
-with open(".env", "r") as f:
+with open(r"C:\Users\novab\Downloads\Py\Discord-Profile\.env", "r") as f:
     for line in f:
         if line.startswith("steam_web_api="):
             steam_key = line.split("=", 1)[1].strip()
@@ -191,4 +191,4 @@ while True:
     except Exception as e:
         print("Error:", e)
 
-    time.sleep(15)
+    time.sleep(20)
